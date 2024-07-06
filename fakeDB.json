@@ -9,13 +9,13 @@
             "id": 2,
             "title": "Routing in Next.js",
             "description": "Understand how to implement dynamic routing in Next.js applications.",
-            "likeCount": 85
+            "likeCount": 105
         },
         {
             "id": 3,
             "title": "Static and Server-Side Rendering",
             "description": "Explore the differences between static and server-side rendering in Next.js.",
-            "likeCount": 95
+            "likeCount": 100
         },
         {
             "id": 4,

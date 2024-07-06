@@ -3,7 +3,10 @@
 const Posts = async () => {
 
     const data = await fetch('http://localhost:5000/posts',{
-        cache: 'force-cache'
+        // cache: 'force-cache'
+        next: {
+            revalidate: 5,
+        }
     })
     const posts = await data.json()
 
