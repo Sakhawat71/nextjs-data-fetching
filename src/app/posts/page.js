@@ -4,9 +4,10 @@ const Posts = async () => {
 
     const data = await fetch('http://localhost:5000/posts',{
         // cache: 'force-cache'
-        next: {
-            revalidate: 5,
-        }
+        // next: {
+        //     revalidate: 5,
+        // }
+        cache: 'no-store'
     })
     const posts = await data.json()
 
@@ -20,7 +21,7 @@ const Posts = async () => {
         <div className="">
 
             <div>
-                <h2>Total Post: {posts.length}</h2>
+                <h2>Total Posts: {posts.length}</h2>
             </div>
 
             <div className="grid gap-10 mx-16 items-center space-y-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

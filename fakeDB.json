@@ -3,13 +3,13 @@
             "id": 1,
             "title": "Introduction to Next.js",
             "description": "Learn the basics of Next.js, a React framework for production.",
-            "likeCount": 120
+            "likeCount": 1200
         },
         {
             "id": 2,
             "title": "Routing in Next.js",
             "description": "Understand how to implement dynamic routing in Next.js applications.",
-            "likeCount": 105
+            "likeCount": 1005
         },
         {
             "id": 3,
