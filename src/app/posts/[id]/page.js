@@ -1,11 +1,12 @@
-// import axios from "axios";
-
 import Link from "next/link";
 
+export const generateStaticParams = async () => {
+    return [{id:'1'},{id:"5"}]
+}
+
+
 const PostDetails = async ({ params }) => {
-
-
-    console.log(params.id);
+    // console.log(params.id);
 
     const res = await fetch(`http://localhost:5000/posts/${params.id}`)
     const post = await res.json();
