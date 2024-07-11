@@ -1,8 +1,10 @@
 // import axios from "axios";
 
+import Link from "next/link";
+
 const Posts = async () => {
 
-    const data = await fetch('http://localhost:5000/posts',{
+    const data = await fetch('http://localhost:5000/posts', {
         // cache: 'force-cache'
         // next: {
         //     revalidate: 5,
@@ -30,8 +32,12 @@ const Posts = async () => {
                         <div className="card-body h-full flex flex-col">
                             <h2 className="card-title">{post.title}</h2>
                             <p className="flex-grow">{post.description}</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn">{post.likeCount}</button>
+                            <div className="card-actions justify-between">
+
+                                <button className="btn btn-md">{post.likeCount}</button>
+                                <Link href={`/posts/${post.id}`} >
+                                    <button className="btn">Read more</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
