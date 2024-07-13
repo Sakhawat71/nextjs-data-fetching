@@ -1,7 +1,17 @@
 import Link from "next/link";
 
 export const generateStaticParams = async () => {
-    return [{id:'1'},{id:"5"}]
+    // return [{id:'1'},{id:"5"}]
+    const res = await fetch(`http://localhost:5000/posts`);
+    const posts = await res.json();
+
+    const ids = posts.map((post) => {
+        return {
+            id: post.id + '',
+        }
+    });
+
+    return ids;
 }
 
 
