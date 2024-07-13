@@ -15,6 +15,9 @@ const MainPage = () => {
                     <li>
                         <Link href="/posts" className='btn btn-sm'>Posts</Link>
                     </li>
+                    <li>
+                        <Link href="/users" className='btn btn-sm'>Users</Link>
+                    </li>
                 </ul>
             </div>
 
